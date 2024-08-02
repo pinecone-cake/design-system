@@ -1,143 +1,171 @@
 export type TypographyVariant =
-    | 'headline-xl-regular'
-    | 'headline-lg-medium'
-    | 'headline-base-medium'
-    | 'headline-sm-semibold'
-    | 'headline-sm-medium'
-    | 'title-lg-semibold'
-    | 'title-lg-medium'
-    | 'title-base-semibold'
-    | 'title-base-medium'
-    | 'title-sm-semibold'
-    | 'title-sm-medium'
-    | 'title-xs-semibold'
-    | 'title-xs-medium'
-    | 'label-lg-semibold'
-    | 'label-lg-medium'
-    | 'label-base-semibold'
-    | 'label-base-medium'
-    | 'label-sm-semibold'
-    | 'label-sm-medium'
+    | 'display-3xl'
+    | 'display-2xl'
+    | 'display-xl'
+    | 'headline-3xl'
+    | 'headline-2xl'
+    | 'headline-xl'
+    | 'headline-md'
+    | 'headline-sm'
+    | 'body-lg-bold'
+    | 'body-lg-semibold'
+    | 'body-lg-medium'
     | 'body-lg-regular'
-    | 'body-base-regular'
-    | 'body-sm-regular';
+    | 'body-md-bold'
+    | 'body-md-semibold'
+    | 'body-md-medium'
+    | 'body-md-regular'
+    | 'label-lg-bold'
+    | 'label-lg-regular'
+    | 'label-md-bold'
+    | 'label-md-regular'
+    | 'label-sm-bold'
+    | 'label-sm-regular';
 
 export type FontSize = number;
 export type FontWeight = number | string;
 export type LineHeight = number;
+export type LetterSpacing = number;
 
 export const typography: Record<
     TypographyVariant,
-    { fontSize: FontSize; lineHeight: LineHeight; fontWeight: FontWeight }
+    {
+        fontSize: FontSize;
+        lineHeight: LineHeight;
+        fontWeight: FontWeight;
+        letterSpacing: LetterSpacing;
+    }
 > = {
-    'headline-xl-regular': {
+    'display-3xl': {
+        fontSize: 64,
+        lineHeight: 70,
+        fontWeight: '700',
+        letterSpacing: -0.3,
+    },
+    'display-2xl': {
+        fontSize: 54,
+        lineHeight: 60,
+        fontWeight: '700',
+        letterSpacing: -0.3,
+    },
+    'display-xl': {
+        fontSize: 48,
+        lineHeight: 54,
+        fontWeight: '700',
+        letterSpacing: -0.3,
+    },
+    'headline-3xl': {
+        fontSize: 40,
+        lineHeight: 44,
+        fontWeight: '700',
+        letterSpacing: -0.3,
+    },
+    'headline-2xl': {
         fontSize: 36,
-        lineHeight: 45,
-        fontWeight: '400',
+        lineHeight: 48,
+        fontWeight: '700',
+        letterSpacing: -0.3,
     },
-    'headline-lg-medium': {
-        fontSize: 32,
+    'headline-xl': {
+        fontSize: 30,
         lineHeight: 40,
-        fontWeight: '500',
+        fontWeight: '700',
+        letterSpacing: -0.3,
     },
-    'headline-base-medium': {
-        fontSize: 28,
-        lineHeight: 35,
-        fontWeight: '500',
-    },
-    'headline-sm-semibold': {
+    'headline-md': {
         fontSize: 24,
-        lineHeight: 30,
-        fontWeight: '600',
+        lineHeight: 32,
+        fontWeight: '700',
+        letterSpacing: -0.3,
     },
-    'headline-sm-medium': {
+    'headline-sm': {
         fontSize: 24,
-        lineHeight: 30,
-        fontWeight: '500',
+        lineHeight: 32,
+        fontWeight: '700',
+        letterSpacing: -0.3,
     },
-    'title-lg-semibold': {
-        fontSize: 20,
-        lineHeight: 25,
-        fontWeight: '600',
-    },
-    'title-lg-medium': {
-        fontSize: 20,
-        lineHeight: 25,
-        fontWeight: '500',
-    },
-    'title-base-semibold': {
-        fontSize: 18,
-        lineHeight: 23,
-        fontWeight: '600',
-    },
-    'title-base-medium': {
-        fontSize: 18,
-        lineHeight: 23,
-        fontWeight: '500',
-    },
-    'title-sm-semibold': {
+    'body-lg-bold': {
         fontSize: 16,
-        lineHeight: 20,
-        fontWeight: '600',
+        lineHeight: 24,
+        fontWeight: '700',
+        letterSpacing: -0.3,
     },
-    'title-sm-medium': {
+    'body-lg-semibold': {
         fontSize: 16,
-        lineHeight: 20,
-        fontWeight: '500',
-    },
-    'title-xs-semibold': {
-        fontSize: 14,
-        lineHeight: 18,
+        lineHeight: 24,
         fontWeight: '600',
+        letterSpacing: -0.3,
     },
-    'title-xs-medium': {
-        fontSize: 14,
-        lineHeight: 18,
-        fontWeight: '500',
-    },
-    'label-lg-semibold': {
+    'body-lg-medium': {
         fontSize: 16,
-        lineHeight: 20,
-        fontWeight: '600',
-    },
-    'label-lg-medium': {
-        fontSize: 16,
-        lineHeight: 20,
+        lineHeight: 24,
         fontWeight: '500',
-    },
-    'label-base-semibold': {
-        fontSize: 14,
-        lineHeight: 18,
-        fontWeight: '600',
-    },
-    'label-base-medium': {
-        fontSize: 14,
-        lineHeight: 18,
-        fontWeight: '500',
-    },
-    'label-sm-semibold': {
-        fontSize: 12,
-        lineHeight: 15,
-        fontWeight: '600',
-    },
-    'label-sm-medium': {
-        fontSize: 12,
-        lineHeight: 15,
-        fontWeight: '500',
+        letterSpacing: -0.3,
     },
     'body-lg-regular': {
         fontSize: 16,
-        lineHeight: 21,
+        lineHeight: 24,
         fontWeight: '400',
+        letterSpacing: -0.3,
     },
-    'body-base-regular': {
+    'body-md-bold': {
         fontSize: 14,
-        lineHeight: 18,
-        fontWeight: '400',
+        lineHeight: 20,
+        fontWeight: '700',
+        letterSpacing: -0.3,
     },
-    'body-sm-regular': {
+    'body-md-semibold': {
+        fontSize: 14,
+        lineHeight: 20,
+        fontWeight: '600',
+        letterSpacing: -0.3,
+    },
+    'body-md-medium': {
+        fontSize: 14,
+        lineHeight: 20,
+        fontWeight: '500',
+        letterSpacing: -0.3,
+    },
+    'body-md-regular': {
+        fontSize: 14,
+        lineHeight: 20,
+        fontWeight: '400',
+        letterSpacing: -0.3,
+    },
+    'label-lg-bold': {
+        fontSize: 16,
+        lineHeight: 24,
+        fontWeight: '700',
+        letterSpacing: -0.3,
+    },
+    'label-lg-regular': {
+        fontSize: 16,
+        lineHeight: 24,
+        fontWeight: '400',
+        letterSpacing: -0.3,
+    },
+    'label-md-bold': {
+        fontSize: 14,
+        lineHeight: 20,
+        fontWeight: '700',
+        letterSpacing: -0.3,
+    },
+    'label-md-regular': {
+        fontSize: 14,
+        lineHeight: 20,
+        fontWeight: '400',
+        letterSpacing: -0.3,
+    },
+    'label-sm-bold': {
+        fontSize: 12,
+        lineHeight: 16,
+        fontWeight: '700',
+        letterSpacing: -0.3,
+    },
+    'label-sm-regular': {
         fontSize: 12,
         lineHeight: 16,
         fontWeight: '400',
+        letterSpacing: -0.3,
     },
 } as const;

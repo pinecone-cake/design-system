@@ -1,10 +1,12 @@
-import { layout, LayoutRadius, LayoutSpacing, LayoutBorderWidth } from './layout';
 import { typography, TypographyVariant, FontSize, FontWeight, LineHeight } from './typography';
+import { borderWidth, radius, spacing, Spacing, Radius, BorderWidth } from './layout';
 import { themeColors as colors, ColorKeys } from './colors';
 
 export const foundation = {
     colors,
-    layout,
+    spacing,
+    radius,
+    borderWidth,
     typography,
 };
 
@@ -14,7 +16,7 @@ export type {
     FontWeight,
     LineHeight,
     ColorKeys,
-    LayoutSpacing,
-    LayoutRadius,
-    LayoutBorderWidth,
+    Spacing,
+    Radius,
+    BorderWidth,
 };
