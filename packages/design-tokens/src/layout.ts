@@ -43,24 +43,26 @@ export const spacing = {
 } as const;
 
 export const radius = {
-    '0': 0,
-    '50': 2,
-    '100': 4,
-    '150': 6,
-    '200': 8,
-    '250': 10,
-    '300': 12,
-    '350': 14,
-    '400': 16,
-    circle: 999,
+    'radius-none': 0,
+    'radius-3xs': 2,
+    'radius-2xs': 4,
+    'radius-xs': 6,
+    'radius-md': 8,
+    'radius-lg': 12,
+    'radius-xl': 16,
+    'radius-2xl': 20,
+    'radius-3xl': 24,
+    'radius-circle': 9999,
 } as const;
 
 export const borderWidth = {
-    '0': 0,
-    '50': 0.5,
-    '100': 1,
-    '200': 1.5,
-    '300': 2,
+    'border-0': 0,
+    'border-50': 0.5,
+    'border-100': 1,
+    'border-150': 1.5,
+    'border-200': 2,
+    'border-250': 2.5,
+    'border-300': 3,
 } as const;
 
 export type Spacing = keyof typeof spacing;
