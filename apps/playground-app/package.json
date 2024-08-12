@@ -1,0 +1,19 @@
+{
+  "name": "playground-app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@react-native/metro-config": "*",
+    "@testing-library/jest-native": "*",
+    "@testing-library/react-native": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-svg": "*",
+    "metro-config": "*",
+    "react-dom": "*",
+    "@nx/webpack": "*",
+    "@nx/react": "*",
+    "react-native-svg-transformer": "*"
+  },
+  "devDependencies": {}
+}
