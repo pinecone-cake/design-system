@@ -1,4 +1,4 @@
-const palette = {
+export const palette = {
     'gray-10': '#FFFFFF',
     'gray-15': '#FDFDFD',
     'gray-20': '#FAFAFA',
@@ -168,7 +168,7 @@ const palette = {
     'magenta-80': '#791A79',
     'magenta-90': '#561056',
     'magenta-100': '#340634',
-};
+} as const;
 
 export type ColorKeys =
     | 'color-bg'
@@ -192,6 +192,8 @@ export type ColorKeys =
     | 'color-bg-fill-error'
     | 'color-text'
     | 'color-text-secondary'
+    | 'color-text-tertiary'
+    | 'color-text-quaternary'
     | 'color-text-disabled'
     | 'color-text-inverse'
     | 'color-text-on-bg-hover'
@@ -248,7 +250,9 @@ export const themeColors: Record<'light' | 'dark', { [key in ColorKeys]: string 
         'color-bg-fill-error': palette['red-55'],
         'color-text': palette['gray-100'],
         'color-text-secondary': palette['gray-70'],
-        'color-text-disabled': palette['gray-60'],
+        'color-text-tertiary': palette['gray-65'],
+        'color-text-quaternary': palette['gray-60'],
+        'color-text-disabled': palette['gray-50'],
         'color-text-inverse': palette['gray-10'],
         'color-text-on-bg-hover': palette['gray-45'],
         'color-text-info': palette['lightblue-80'],
@@ -303,7 +307,9 @@ export const themeColors: Record<'light' | 'dark', { [key in ColorKeys]: string 
         'color-bg-fill-error': palette['red-55'],
         'color-text': palette['gray-100'],
         'color-text-secondary': palette['gray-70'],
-        'color-text-disabled': palette['gray-60'],
+        'color-text-tertiary': palette['gray-65'],
+        'color-text-quaternary': palette['gray-60'],
+        'color-text-disabled': palette['gray-50'],
         'color-text-inverse': palette['gray-10'],
         'color-text-on-bg-hover': palette['gray-45'],
         'color-text-info': palette['lightblue-80'],
