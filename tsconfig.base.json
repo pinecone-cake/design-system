@@ -16,6 +16,7 @@
         "baseUrl": ".",
         "paths": {
             "@pinecone-cake/design-tokens": ["packages/design-tokens/src/index.ts"],
+            "@pinecone-cake/react-native-ui": ["packages/react-native-ui/src/index.ts"],
             "@pinecone-cake/react-ui": ["packages/react-ui/src/index.ts"]
         }
     },
